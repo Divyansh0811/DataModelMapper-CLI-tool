@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "datamodelmapper"
+version = "0.1.0"
+description = "This is an cli tool to create a data model from an CSV for the selected LLM model"
+authors = ["Divyansh0811 <divyanshm471@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+datamodelmapper = "main:cli" # Entry point to the cli
